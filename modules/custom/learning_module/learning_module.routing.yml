@@ -1,0 +1,16 @@
+learning_module.demo:
+  path: 'dummy/data'
+  defaults:
+    _controller: '\Drupal\learning_module\Controller\demo::dummy_function'
+    _title: 'print dummy data'
+  requirements:
+    _access: 'TRUE'
+
+works_api.printJsonController:
+  path: 'api/v1/test'
+  defaults:
+    _controller: 'Drupal\learning_module\Controller\printJsonController::printJsonObject'
+    _title: 'JSON api'
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'
