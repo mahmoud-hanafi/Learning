@@ -14,3 +14,14 @@ works_api.printJsonController:
   methods:  [GET]
   requirements:
     _access: 'TRUE'
+
+works_api.postJsonRequest:
+  path: 'api/v1/post'
+  defaults:
+    _controller: 'Drupal\learning_module\Controller\postJsonRequest::addArticle'
+    _title: 'Add Node of type Article'
+  methods: [POST]
+  requirements:
+    _access: 'TRUE'
+    _content_type_format: 'hal|json|hal_json'
+  

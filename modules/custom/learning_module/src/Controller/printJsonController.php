@@ -4,9 +4,14 @@ namespace Drupal\learning_module\Controller;
 
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
+use Drupal\Component\Serialization\Json;
+use Drupal\Core\Entity\Exception;
 use Drupal\Core\Controller\ControllerBase;
+use Drupal\rest\Plugin\ResourceBase;
+use Drupal\rest\Plugin\rest\resource\EntityResource;
+use Drupal\node\Entity\Node;
 
-class printJsonController{
+class printJsonController extends ControllerBase{
     
     public function printJsonObject(Request $request) {
         
