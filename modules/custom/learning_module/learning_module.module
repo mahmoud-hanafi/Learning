@@ -31,7 +31,7 @@ function form_article_submit($form, \Drupal\Core\Form\FormStateInterface $form_s
 /**
  * Implements hook_theme().
  */
-function my_module_theme($existing, $type, $theme, $path) {
+function learning_module_theme($existing, $type, $theme, $path) {
   return [
     'my_template' => [
       'variables' => [
