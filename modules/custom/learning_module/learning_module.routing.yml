@@ -25,3 +25,10 @@ works_api.postJsonRequest:
     _access: 'TRUE'
     _content_type_format: 'hal|json|hal_json'
   
+works_api.printCustomBlock:
+  path: 'print/module'
+  defaults:
+    _controller: 'Drupal\learning_module\Controller\printCustomBlock::displayBlock'
+    _title: 'Print Custom module through twig template'
+  requirements:
+    _access: 'TRUE'

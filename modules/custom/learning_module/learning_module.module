@@ -28,4 +28,16 @@ function form_article_submit($form, \Drupal\Core\Form\FormStateInterface $form_s
   $form_state->setRedirectUrl($url);
 }
 
+/**
+ * Implements hook_theme().
+ */
+function my_module_theme($existing, $type, $theme, $path) {
+  return [
+    'my_template' => [
+      'variables' => [
+        'demo_blok' => NULL
+      ],
+    ],
+  ];
+}
 ?>
